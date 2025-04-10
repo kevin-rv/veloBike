@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #475d5b;
+    line-height: 1.6;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #f2f7f5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.logo img {
+    height: 130px;
+    width: auto;
+    display: block; /* Évite l'espace supplémentaire sous l'image */
+}
+
+.nav-and-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-checkbox {
+    display: none;
+}
+
+.hamburger-btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #00473e;
+    cursor: pointer;
+    position: relative;
+    z-index: 102;
+}
+
+.hamburger-icon,
+.hamburger-icon:before,
+.hamburger-icon:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #475d5b;
+    transition: all 0.3s ease;
+}
+.hamburger-icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hamburger-icon:before {
+    top: -6px;
+    left: 0;
+}
+
+.hamburger-icon:after {
+    top: 6px;
+    left: 0;
+}
+
+.mobile-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu {
+    margin-right: 20px;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #475d5b;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-list a:hover {
+    color: #faae2b;
+}
+
+/* Style pour le lien actif */
+.nav-list a[aria-current="page"]::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #faae2b;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.btn-outline {
+    color: #475d5b;
+    background-color: #faae2b;
+}
+
+.btn-outline:hover, .btn-outline:focus {
+    background-color: #e9a125;
+    color: #00473e;
+}
+
+.btn-filled {
+    background-color: #00473e;
+    color: #faae2b;
+}
+
+.btn-filled:hover, .btn-filled:focus {
+    background-color: #002b26; /* Version plus foncée pour un meilleur contraste */
+    border-color: #e9a125;
+}
+
+/* Styles pour les médias queries - accessibilité responsive */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+    
+    /* Afficher le bouton hamburger */
+    .hamburger-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* Cacher le menu par défaut */
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 80px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 101;
+        overflow-y: auto;
+    }
+    
+    /* Ouvrir le menu quand la checkbox est cochée */
+    .hamburger-checkbox:checked ~ .mobile-menu {
+        right: 0;
+    }
+    
+    /* Transformer l'icône hamburger en X */
+    .hamburger-checkbox:checked ~ .hamburger-btn .hamburger-icon {
+        background-color: transparent;
+    }
+    
+    .hamburger-checkbox:checked ~ .hamburger-btn .hamburger-icon:before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    
+    .hamburger-checkbox:checked ~ .hamburger-btn .hamburger-icon:after {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+    
+    /* Ajuster le menu nav pour mobile */
+    .nav-menu {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .nav-list li {
+        width: 100%;
+        border-bottom: 1px solid #f2f7f5;
+    }
+    
+    .nav-list a {
+        display: block;
+        padding: 15px 0;
+    }
+    
+    /* Style des boutons pour mobile */
+    .buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+}

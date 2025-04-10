@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velomobile - Repenser la mobilité rurale</title>
+    <!-- Intégration de la police Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Meta description pour le SEO et l'accessibilité -->
+    <meta
+      name="description"
+      content="Découvrez le vélomobile, une alternative écologique pour la mobilité en zone rurale. Économique, confortable et respectueux de l'environnement."
+    />
+  </head>
+  <body>
+
+    <!-- Header avec navigation -->
+    <header class="header" role="banner">
+      <div class="logo">
+        <a href="index.html" aria-label="Accueil Velomobile">
+          <img src="./assets/logo_1_fond_blanc.png" alt="Logo Velomobile" width="120" height="40" />
+        </a>
+      </div>
+
+      <div class="nav-and-buttons">
+        <!-- Hamburger menu pour mobile -->
+        <input
+          type="checkbox"
+          id="hamburger-toggle"
+          class="hamburger-checkbox"
+        />
+        <label
+          for="hamburger-toggle"
+          class="hamburger-btn"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="hamburger-icon"></span>
+        </label>
+
+        <div class="mobile-menu">
+          <nav class="nav-menu" role="navigation" aria-label="Menu principal">
+            <ul class="nav-list">
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Qui sommes-nous</a></li>
+              <li><a href="#">Nos vélomobiles</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">Technique</a></li>
+            </ul>
+          </nav>
+
+          <div class="buttons" role="group" aria-label="Actions rapides">
+            <a href="#" class="btn btn-outline" role="button">Contact</a>
+            <a href="#" class="btn btn-filled" role="button"
+              >Espace Client</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+  </body>
+</html>
