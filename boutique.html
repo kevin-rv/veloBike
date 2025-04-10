@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boutique</title>
+    <!-- Intégration de la police Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./boutique.css" />
+    <!-- Meta description pour le SEO et l'accessibilité -->
+    <meta
+      name="description"
+      content="Découvrez le vélomobile, une alternative écologique pour la mobilité en zone rurale. Économique, confortable et respectueux de l'environnement."
+    />
+  </head>
+  <body>
+    <!-- Header avec navigation -->
+    <header class="header" role="banner">
+      <div class="logo">
+        <a href="index.html" aria-label="Accueil Velomobile">
+          <img
+            src="./assets/logo_1_fond_blanc.png"
+            alt="Logo Velomobile"
+            width="120"
+            height="40"
+          />
+        </a>
+      </div>
+
+      <div class="nav-and-buttons">
+        <!-- Hamburger menu pour mobile -->
+        <input
+          type="checkbox"
+          id="hamburger-toggle"
+          class="hamburger-checkbox"
+        />
+        <label
+          for="hamburger-toggle"
+          class="hamburger-btn"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="hamburger-icon"></span>
+        </label>
+
+        <div class="mobile-menu">
+          <nav class="nav-menu" role="navigation" aria-label="Menu principal">
+            <ul class="nav-list">
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Qui sommes-nous</a></li>
+              <li><a href="#">Nos vélomobiles</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">Technique</a></li>
+            </ul>
+          </nav>
+
+          <div class="buttons" role="group" aria-label="Actions rapides">
+            <a href="#" class="btn btn-outline" role="button">Contact</a>
+            <a href="#" class="btn btn-filled" role="button">Espace Client</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- 
+
+     -->
+    <div class="main-top">
+      <img src="./images/velomobile.jpg" class="main-top-img" alt="" />
+      <div class="main-top-title"><h2>Nos vélomobiles</h2></div>
+    </div>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="search-box" id="">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Rechercher un produit..."
+            aria-label="Rechercher un produit"
+          />
+          <button type="submit" aria-label="Lancer la recherche">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+        </div>
+        <div class="filter-section">
+          <h3>Filtrez nos produits</h3>
+          <div class="filter-options">
+            <h4>Types</h4>
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="filter-electrique"
+                name="filter-type"
+                value="electrique"
+              />
+              <label for="filter-electrique">Électrique</label>
+            </div>
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="filter-non-electrique"
+                name="filter-type"
+                value="non-electrique"
+              />
+              <label for="filter-non-electrique">Non électrique</label>
+            </div>
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="filter-carioles"
+                name="filter-feature"
+                value="carioles"
+              />
+              <label for="filter-carioles">Carioles</label>
+            </div>
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="filter-accessoires"
+                name="filter-feature"
+                value="accessoires"
+              />
+              <label for="filter-accessoires">Accessoires</label>
+            </div>
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="filter-pieces"
+                name="filter-feature"
+                value="pieces"
+              />
+              <label for="filter-pieces">Pièces détachés</label>
+            </div>
+          </div>
+        </div>
+        <div class="filter-section">
+          <h3>Prix</h3>
+          <div class="filter-options">
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="price-1"
+                name="filter-price"
+                value="0-1000"
+              />
+              <label for="price-1">0 € à 1.000€</label>
+            </div>
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="price-2"
+                name="filter-price"
+                value="1000-3000"
+              />
+              <label for="price-2">1.000 € à 3.000€</label>
+            </div>
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="price-3"
+                name="filter-price"
+                value="3000-6000"
+              />
+              <label for="price-3">3.000€ à 6.000€</label>
+            </div>
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="price-4"
+                name="filter-price"
+                value="6000-9000"
+              />
+              <label for="price-4">6.000€ à 9.000€</label>
+            </div>
+            <div class="filter-option">
+              <input
+                type="checkbox"
+                id="price-5"
+                name="filter-price"
+                value="9000-plus"
+              />
+              <label for="price-5">+9.000€</label>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <!-- contenu principal -->
+      <main class="main-content" id="content">
+        <div class="sort-selector">
+          <label for="sort-selector" class="sr-only">Trier par</label>
+          <select id="sort-selector" aria-label="Trier par">
+            <option value="default">Défaut</option>
+            <option value="price-asc">Prix croissant</option>
+            <option value="price-desc">Prix décroissant</option>
+            <option value="name-asc">Nom (A-Z)</option>
+            <option value="name-desc">Nom (Z-A)</option>
+          </select>
+        </div>
+        <!-- Grille des articles -->
+        <div class="product-grid">
+          <!-- Produit 1 -->
+          <article class="product-card">
+            <img src="./images/velo1.jpg" alt="" />
+            <div class="product-info">
+              <div class="product-price-tag">À partir de 10000€</div>
+              <h3 class="product-name">DF-XL</h3>
+              <a
+                href="#"
+                class="product-button"
+                aria-label="Voir les détails du DF XL"
+                >Voir plus</a
+              >
+            </div>
+          </article>
+          <!-- Produit 2 -->
+          <article class="product-card">
+            <img src="" alt="" />
+            <div class="product-info">
+              <div class="product-price-tag">À partir de 10000€</div>
+              <h3 class="product-name">DF-XL</h3>
+              <a
+                href="#"
+                class="product-button"
+                aria-label="Voir les détails du DF XL"
+                >Voir plus</a
+              >
+            </div>
+          </article>
+          <!-- Produit 3 -->
+          <article class="product-card">
+            <img src="" alt="" />
+            <div class="product-info">
+              <div class="product-price-tag">À partir de 10000€</div>
+              <h3 class="product-name">DF-XL</h3>
+              <a
+                href="#"
+                class="product-button"
+                aria-label="Voir les détails du DF XL"
+                >Voir plus</a
+              >
+            </div>
+          </article>
+          <!-- Produit 4 -->
+          <article class="product-card">
+            <img src="" alt="" />
+            <div class="product-info">
+              <div class="product-price-tag">À partir de 10000€</div>
+              <h3 class="product-name">DF-XL</h3>
+              <a
+                href="#"
+                class="product-button"
+                aria-label="Voir les détails du DF XL"
+                >Voir plus</a
+              >
+            </div>
+          </article>
+          <!-- Produit 5 -->
+          <article class="product-card">
+            <img src="" alt="" />
+            <div class="product-info">
+              <div class="product-price-tag">À partir de 10000€</div>
+              <h3 class="product-name">DF-XL</h3>
+              <a
+                href="#"
+                class="product-button"
+                aria-label="Voir les détails du DF XL"
+                >Voir plus</a
+              >
+            </div>
+          </article>
+          <!-- Produit 6 -->
+          <article class="product-card">
+            <img src="" alt="" />
+            <div class="product-info">
+              <div class="product-price-tag">À partir de 10000€</div>
+              <h3 class="product-name">DF-XL</h3>
+              <a
+                href="#"
+                class="product-button"
+                aria-label="Voir les détails du DF XL"
+                >Voir plus</a
+              >
+            </div>
+          </article>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
