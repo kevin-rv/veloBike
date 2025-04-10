@@ -1,0 +1,50 @@
+Persona 1 : 
+
+homme 50 ans qui s'appelle Simon
+il a 3 enfants 22 20 et 18 ans, ses 3 enfants sont étudiants et autonome
+Sa femme est infirmière indépendante et elle travaille autour de Vaucelles 14400.
+Il a fait des études supérieur, il a un bon salaire.
+Avant il devait prendre la voiture tous les jours pour amener ses enfants à l'école.
+Il en a marre de faire ces 100 km / Jour en voiture à cause des embouteillages et de ses convictions écologiques
+Il a fait son bilan carbone sur le site du ministère. et souhaite avoir un impact écologique.
+Cadre sup CSP+
+Conviction écologique forte
+il habite à Vaucelles 14400
+il travail au mémorial de Caen où il est directeur adjoint, il y a environ 30 km pour y aller, pas bcp de dénivelé 
+
+Sa motivation c'est déplacement long et quotidien donc il faut quelque chose de solide, facile a entretenir et en faire quand il pleut.
+Il est sportif mais il souhaite quand même avoir un moteur électrique pour l'aider.
+Il est curieux, il a déjà vu un vélo mobile lors d'un voyage en hollande.
+Il envisage une petite voiture électrique, transports en commun ou autre.
+Il est super à l'aise avec l'informatique.
+Il travaille sous linux avec un ordinateur portable Lenovo. (considéré comme Robuste)
+dans tous ce qu'il fait il essaye d'avoir un impact écologique le plus faible possible.
+Il va négocier un peu de télétravail.
+Il pense aussi faire une nuit ou deux à Caen pour ne faire qu'un aller retour dans la semaine et le reste en TT. afin d'avoir un impact écologique moindre.
+Il aimerait un site permettant de visualiser comment réduire son impact écologique en proposant des solutions alternatives.
+
+Ses freins : 
+
+- Le temps 
+- La praticité.
+
+Il aime voyager avec sa famille en AirBnB (il est à l'aise sur l'application)
+Il aime l'histoire notamment sur le site Histoires d'Histoire
+
+
+Persona 2 :
+
+C'est une cheffe d'entreprise d'EauClaire, elle s'appelle Julie elle a 35 ans. 
+Elle monte un business dans le nettoyage des boutiques, de bureaux et industrielle.
+elle a un bac dans le sanitaire ST2S
+son objectif est de mettre en avant le côté écologique en utilisant les produits les plus écolos possible
+elle habite dans les quartiers nord de Montpellier.
+Elle veut ouvrir sa boutique dans le quartier Mossons 
+Elle voudrait que ses déplacements se fasse principalement en vélo ou voiture électrique (avantage vélo pour embouteillage et se garer).
+Elle souhaite que son véhicule fasse une pub en même temps et qui marque les esprits.
+
+
+
+
+
+
