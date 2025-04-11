@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velomobile - Inscription</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta
+      name="description"
+      content="Découvrez le vélomobile, une alternative écologique pour la mobilité en zone rurale."
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <a
+          href="/page_atterissage_1/index.html"
+          aria-label="Accueil Velomobile"
+        >
+          <img
+            src="./assets/logo_1_fond_blanc.png"
+            alt="Logo Velomobile"
+            width="120"
+            height="40"
+          />
+        </a>
+      </div>
+
+      <div class="nav-and-buttons">
+        <input
+          type="checkbox"
+          id="hamburger-toggle"
+          class="hamburger-checkbox"
+        />
+        <label
+          for="hamburger-toggle"
+          class="hamburger-btn"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="hamburger-icon"></span>
+        </label>
+
+        <div class="mobile-menu">
+          <nav class="nav-menu">
+            <ul class="nav-list">
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Qui sommes-nous</a></li>
+              <li><a href="#">Nos vélomobiles</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">Technique</a></li>
+            </ul>
+          </nav>
+
+          <div class="buttons">
+            <a href="#" class="btn btn-outline">Contact</a>
+            <a href="/page_connexion/" class="btn btn-filled">Espace Client</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="login-page">
+        <div class="login-form-container">
+          <h1 class="login-title">Inscription</h1>
+          <div class="register-prompt">
+            <p>Vous avez déjà un compte ?</p>
+            <a href="/page_connexion/index.html" class="btn btn-secondary">Connexion</a>
+          </div>
+
+          <form class="login-form" action="/page_paiement/index.html" method="get">
+            <!-- Informations personnelles -->
+            <div class="form-section">
+              <h2 class="form-section-title">Informations personnelles</h2>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstname">Prénom</label>
+                  <input type="text" id="firstname" name="firstname" required />
+                </div>
+                
+                <div class="form-group">
+                  <label for="lastname">Nom</label>
+                  <input type="text" id="lastname" name="lastname" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Téléphone</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+            </div>
+
+            <!-- Sécurité -->
+            <div class="form-section">
+              <h2 class="form-section-title">Sécurité</h2>
+              
+              <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <div class="password-input-container">
+                  <input type="password" id="password" name="password" required />
+                  <button
+                    type="button"
+                    class="toggle-password"
+                    aria-label="Afficher le mot de passe"
+                  >
+                    <img src="./assets/oeil.png" alt="" />
+                  </button>
+                </div>
+                <p class="password-hint">8 caractères minimum, incluant majuscules, minuscules et chiffres</p>
+              </div>
+
+              <div class="form-group">
+                <label for="confirm-password">Confirmer le mot de passe</label>
+                <div class="password-input-container">
+                  <input type="password" id="confirm-password" name="confirm-password" required />
+                  <button
+                    type="button"
+                    class="toggle-password"
+                    aria-label="Afficher le mot de passe"
+                  >
+                    <img src="./assets/oeil.png" alt="" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Conditions -->
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms">J'accepte les <a href="#" class="text-link">conditions générales d'utilisation</a> et la <a href="#" class="text-link">politique de confidentialité</a>.</label>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="newsletter" name="newsletter" />
+              <label for="newsletter">Je souhaite recevoir la newsletter et les offres promotionnelles.</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-login">
+              Créer mon compte
+            </button>
+          </form>
+
+          <div class="social-login">
+            <p>Ou inscrivez-vous avec</p>
+            <div class="social-buttons">
+              <button type="button" class="btn-social btn-google">
+                <img src="./assets/google.png" alt="logo google" />
+              </button>
+              <button type="button" class="btn-social btn-apple">
+                <img src="./assets/logo-apple.png" alt="logo apple" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="login-banner">
+          <div class="banner-content">
+            <h2 class="banner-title">VéloBike</h2>
+            <div class="banner-text">
+              <p class="banner-tagline">Rejoignez l'aventure verte</p>
+              <p>Créez votre compte et profitez de tous les avantages.</p>
+              <p>Réservations prioritaires, suivi de vos trajets, réductions exclusives</p>
+              <p class="banner-cta">
+                Devenez membre de la communauté VéloBike et participez à la révolution de la mobilité rurale
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="./assets/logo_1_fond_blanc.png"
+            alt="Logo Velomobile"
+            width="120"
+            height="40"
+          />
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Qui sommes-nous</a></li>
+              <li><a href="#">Nos vélomobiles</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">Technique</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Contactez-nous</a></li>
+              <li><a href="#">Réservez un essai</a></li>
+              <li><a href="#">Espace client</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Gestion de vos données personnelles</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Nos réseaux sociaux</h3>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  class="social-icon"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="social-icon"
+                >
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter/X" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="social-icon"
+                >
+                  <path
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Youtube" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="social-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Velomobile - Tous droits réservés</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
