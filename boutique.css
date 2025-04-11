@@ -320,7 +320,7 @@ h6 {
 }
 
 .product-card {
-  background: white;
+  background: #00473e;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -341,6 +341,7 @@ h6 {
 .product-info {
   padding: 15px;
   position: relative;
+  color: white;
 }
 
 .product-price-tag {
@@ -358,12 +359,13 @@ h6 {
   font-size: 18px;
   margin-bottom: 15px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: center;
 }
 
 .rating {
   display: flex;
-  display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin-top: 10px;
 }
 
@@ -375,11 +377,11 @@ h6 {
 .product-button {
   display: inline-block;
   text-decoration: none;
-  color: #004d40;
+  color: white;
   font-weight: 500;
   font-size: 14px;
   margin-top: 10px;
-  border-bottom: 2px solid #004d40;
+  border-bottom: 1px solid white;
   transition: color 0.3s ease;
 }
 
