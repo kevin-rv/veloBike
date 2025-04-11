@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velomobile - Accueil</title>
+    <!-- Intégration de la police Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header avec navigation -->
+    <header class="header" role="banner">
+      <div class="logo">
+        <a href="index.html" aria-label="Accueil Velomobile">
+          <img
+            src="./assets/logo_1_fond_blanc.png"
+            alt="Logo Velomobile"
+            width="120"
+            height="40"
+          />
+        </a>
+      </div>
+
+      <div class="nav-and-buttons">
+        <!-- Hamburger menu pour mobile -->
+        <input
+          type="checkbox"
+          id="hamburger-toggle"
+          class="hamburger-checkbox"
+        />
+        <label
+          for="hamburger-toggle"
+          class="hamburger-btn"
+          aria-label="Ouvrir le menu"
+        >
+          <span class="hamburger-icon"></span>
+        </label>
+
+        <div class="mobile-menu">
+          <nav class="nav-menu" role="navigation" aria-label="Menu principal">
+            <ul class="nav-list">
+              <li><a href="/page_accueil/index.html">Accueil</a></li>
+              <li><a href="#">Qui sommes-nous</a></li>
+              <li><a href="#">Nos vélomobiles</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">Technique</a></li>
+            </ul>
+          </nav>
+
+          <div class="buttons" role="group" aria-label="Actions rapides">
+            <a href="#" class="btn btn-outline" role="button">Contact</a>
+            <a
+              href="/page_connexion/index.html"
+              class="btn btn-filled"
+              role="button"
+              >Espace Client</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Repensez la mobilité au quotidien</h1>
+          <p>Écologique • Rapide • Polyvalent</p>
+          <div class="hero-buttons">
+            <a href="#try" class="btn btn-primary">Réserver un essai</a>
+            <a href="#models" class="btn btn-secondary"
+              >Découvrir les modèles</a
+            >
+          </div>
+        </div>
+        <div class="hero-image"></div>
+      </section>
+
+      <!--Section découvrez le vélomobile-->
+
+      <section class="features">
+        <div class="features-container">
+          <div class="features-left">
+            <h2>Découvrez le vélomobile</h2>
+            <div class="features-cards">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m20.893 13.393-1.135-1.135a2.252 2.252 0 0 1-.421-.585l-1.08-2.16a.414.414 0 0 0-.663-.107.827.827 0 0 1-.812.21l-1.273-.363a.89.89 0 0 0-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 0 1-1.81 1.025 1.055 1.055 0 0 1-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 0 1-1.383-2.46l.007-.042a2.25 2.25 0 0 1 .29-.787l.09-.15a2.25 2.25 0 0 1 2.37-1.048l1.178.236a1.125 1.125 0 0 0 1.302-.795l.208-.73a1.125 1.125 0 0 0-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 0 1-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 0 1-1.458-1.137l1.411-2.353a2.25 2.25 0 0 0 .286-.76m11.928 9.869A9 9 0 0 0 8.965 3.525m11.928 9.868A9 9 0 1 1 8.965 3.525"
+                    />
+                  </svg>
+                </div>
+                <h3 class="feature-name">Mobilité douce</h3>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="feature-name">Carrosserie protectice</h3>
+              </div>
+
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"
+                    />
+                  </svg>
+                </div>
+                <h3 class="feature-name">Assistance électrique</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-image">
+            <img
+              src="./assets/ChatGPT Image 9 avr. 2025, 10_24_49.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--Pourquoi adopter le vélomobile ?-->
+      <section class="why-section">
+        <div class="why-container">
+          <h2 class="why-title">Pourquoi adopter le vélomobile ?</h2>
+
+          <div class="why-grid">
+            <div class="why-card">
+              <h3 class="why-card-title">Alternative à la voiture</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi, necessitatibus unde distinctio, non rerum et facere
+                iste ratione sint beatae harum obcaecati voluptatibus
+                consectetur expedita. Eum vitae et voluptatem sequi doloremque,
+                a nobis rem nihil, maxime, autem amet atque facilis.
+              </p>
+            </div>
+            <div class="why-card">
+              <h3 class="why-card-title">Economie au quotidien</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi, necessitatibus unde distinctio, non rerum et facere
+                iste ratione sint beatae harum obcaecati voluptatibus
+                consectetur expedita. Eum vitae et voluptatem sequi doloremque,
+                a nobis rem nihil, maxime, autem amet atque facilis.
+              </p>
+            </div>
+            <div class="why-card">
+              <h3 class="why-card-title">Zéro émission</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi, necessitatibus unde distinctio, non rerum et facere
+                iste ratione sint beatae harum obcaecati voluptatibus
+                consectetur expedita. Eum vitae et voluptatem sequi doloremque,
+                a nobis rem nihil, maxime, autem amet atque facilis.
+              </p>
+            </div>
+            <div class="why-card">
+              <h3 class="why-card-title">Design unique</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Commodi, necessitatibus unde distinctio, non rerum et facere
+                iste ratione sint beatae harum obcaecati voluptatibus
+                consectetur expedita. Eum vitae et voluptatem sequi doloremque,
+                a nobis rem nihil, maxime, autem amet atque facilis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Ils l'ont adoptés ! -->
+
+      <section class="testimonials">
+        <div class="testimonials-container">
+          <h2>Ils l'ont adoptés</h2>
+          <p class="testimonials-subtitle">
+            Et c'est nos clients qui en parlent le mieux
+          </p>
+
+          <!-- Contrôles cachés -->
+          <input
+            type="radio"
+            name="testimonial"
+            id="testimonial-1"
+            checked
+            class="testimonial-control"
+          />
+          <input
+            type="radio"
+            name="testimonial"
+            id="testimonial-2"
+            class="testimonial-control"
+          />
+          <input
+            type="radio"
+            name="testimonial"
+            id="testimonial-3"
+            class="testimonial-control"
+          />
+
+          <!-- Navigation et Slider -->
+          <div class="slider-with-controls">
+            <!-- Navigation gauche (précédent) -->
+            <div class="slider-nav">
+              <label for="testimonial-3" class="nav-arrow prev" id="prev-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="nav-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </label>
+              <label for="testimonial-1" class="nav-arrow prev" id="prev-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="nav-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </label>
+              <label for="testimonial-2" class="nav-arrow prev" id="prev-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="nav-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5 8.25 12l7.5-7.5"
+                  />
+                </svg>
+              </label>
+            </div>
+
+            <!-- Carrousel central -->
+            <div class="testimonials-carousel">
+              <div class="testimonials-slides">
+                <div class="testimonial-slide" id="slide-1">
+                  <div class="testimonial-content">
+                    <div class="testimonial-photo">
+                      <img
+                        src="./assets/istockphoto-1364917563-612x612.jpg"
+                        alt="Photo de Laurent"
+                      />
+                    </div>
+                    <div class="testimonial-text">
+                      <h3>Laurent</h3>
+                      <p class="testimonial-location">DRH, Ardèche</p>
+                      <p class="testimonial-quote">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam fugit enim odio explicabo vero aliquam id,
+                        impedit vitae mollitia quisquam delectus veniam commodi
+                        sunt eum tempore nihil corrupti sequi ipsa dicta animi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-slide" id="slide-2">
+                  <div class="testimonial-content">
+                    <div class="testimonial-photo">
+                      <img
+                        src="./assets/istockphoto-1270066894-612x612.jpg"
+                        alt="Photo de Marie"
+                      />
+                    </div>
+                    <div class="testimonial-text">
+                      <h3>Marie</h3>
+                      <p class="testimonial-location">
+                        Enseignante, Lot-et-Garonne
+                      </p>
+                      <p class="testimonial-quote">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam fugit enim odio explicabo vero aliquam id,
+                        impedit vitae mollitia quisquam delectus veniam commodi
+                        sunt eum tempore nihil corrupti sequi ipsa dicta animi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="testimonial-slide" id="slide-3">
+                  <div class="testimonial-content">
+                    <div class="testimonial-photo">
+                      <img
+                        src="./assets/istockphoto-1313927273-612x612.jpg"
+                        alt="Photo de Jacques"
+                      />
+                    </div>
+                    <div class="testimonial-text">
+                      <h3>Jacques</h3>
+                      <p class="testimonial-location">Retraité, Morbihan</p>
+                      <p class="testimonial-quote">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Quibusdam fugit enim odio explicabo vero aliquam id,
+                        impedit vitae mollitia quisquam delectus veniam commodi
+                        sunt eum tempore nihil corrupti sequi ipsa dicta animi.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation droite (suivant) -->
+            <div class="slider-nav">
+              <label for="testimonial-2" class="nav-arrow next" id="next-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="nav-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </label>
+              <label for="testimonial-3" class="nav-arrow next" id="next-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="nav-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </label>
+              <label for="testimonial-1" class="nav-arrow next" id="next-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="nav-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </label>
+            </div>
+          </div>
+
+          <!-- Indicateurs -->
+          <div class="testimonial-indicators">
+            <label
+              for="testimonial-1"
+              class="indicator"
+              aria-label="Voir le témoignage 1"
+            ></label>
+            <label
+              for="testimonial-2"
+              class="indicator"
+              aria-label="Voir le témoignage 2"
+            ></label>
+            <label
+              for="testimonial-3"
+              class="indicator"
+              aria-label="Voir le témoignage 3"
+            ></label>
+          </div>
+        </div>
+      </section>
+
+      <!--Découvrez nos modèles -->
+
+      <section class="models" id="models">
+        <div class="models-container">
+          <h2 class="models-title">Découvrez nos modèles</h2>
+
+          <div class="models-grid">
+            <div class="model-card">
+              <div class="model-image">
+                <img src="./assets/velo1.jpg" alt="" />
+              </div>
+              <div class="model-info">
+                <div class="model-name">DF-XL</div>
+                <div class="model-price">10 000€</div>
+                <a href="#" class="model-btn">En savoir plus</a>
+              </div>
+            </div>
+            <div class="model-card">
+              <div class="model-image">
+                <img src="./assets/velo2.jpeg" alt="" />
+              </div>
+              <div class="model-info">
+                <div class="model-name">ALPHA 9</div>
+                <div class="model-price">12 000€</div>
+                <a href="#" class="model-btn">En savoir plus</a>
+              </div>
+            </div>
+            <div class="model-card">
+              <div class="model-image">
+                <img src="./assets/velo3.jpg" alt="" />
+              </div>
+              <div class="model-info">
+                <div class="model-name">RX-M8</div>
+                <div class="model-price">14 000€</div>
+                <a href="#" class="model-btn">En savoir plus</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="models-cta">
+            <a href="" class="btn btn-primary">Découvrez tous nos modèles</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section Essayez-le gratuitement -->
+      <section class="try-section" id="try">
+        <div class="try-container">
+          <h2 class="try-title">Essayez-le gratuitement près de chez vous !</h2>
+
+          <div class="try-content">
+            <!-- Colonne gauche : Carte -->
+            <div class="try-map-column">
+              <div class="map-search">
+                <input
+                  type="text"
+                  placeholder="Votre adresse"
+                  class="map-input"
+                />
+                <button class="map-search-btn">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="map-container">
+                <!-- Image statique de la carte (à remplacer par l'API Google Maps) -->
+                <img
+                  src="./assets/Capture d’écran 2025-04-11 161658.png"
+                  alt="Carte des points d'essai"
+                  class="map-image"
+                />
+
+                <!-- Points sur la carte (simulés) -->
+                <div
+                  class="map-marker"
+                  style="top: 30%; left: 25%"
+                  tabindex="0"
+                  aria-label="Point d'essai 1"
+                ></div>
+                <div
+                  class="map-marker"
+                  style="top: 45%; left: 60%"
+                  tabindex="0"
+                  aria-label="Point d'essai 2"
+                ></div>
+                <div
+                  class="map-marker"
+                  style="top: 65%; left: 35%"
+                  tabindex="0"
+                  aria-label="Point d'essai 3"
+                ></div>
+                <div
+                  class="map-marker"
+                  style="top: 20%; left: 70%"
+                  tabindex="0"
+                  aria-label="Point d'essai 4"
+                ></div>
+                <div
+                  class="map-marker"
+                  style="top: 80%; left: 15%"
+                  tabindex="0"
+                  aria-label="Point d'essai 5"
+                ></div>
+                <div
+                  class="map-marker"
+                  style="top: 70%; left: 80%"
+                  tabindex="0"
+                  aria-label="Point d'essai 6"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Colonne droite : Créneaux horaires -->
+            <div class="try-slots-column">
+              <h3 class="slots-title">Choisissez la date qui vous convient</h3>
+
+              <div class="slots-grid">
+                <!-- Ligne 1 : 12 Avril -->
+                <div class="slot-card">
+                  <div class="slot-date">12 Avril</div>
+                  <div class="slot-time">10h</div>
+                  <a href="#" class="slot-btn">Réserver ce créneau</a>
+                </div>
+
+                <div class="slot-card">
+                  <div class="slot-date">12 Avril</div>
+                  <div class="slot-time">14h</div>
+                  <a href="#" class="slot-btn">Réserver ce créneau</a>
+                </div>
+
+                <!-- Ligne 2 : 14 Avril -->
+                <div class="slot-card">
+                  <div class="slot-date">14 Avril</div>
+                  <div class="slot-time">10h</div>
+                  <a href="#" class="slot-btn">Réserver ce créneau</a>
+                </div>
+
+                <div class="slot-card">
+                  <div class="slot-date">14 Avril</div>
+                  <div class="slot-time">14h</div>
+                  <a href="#" class="slot-btn">Réserver ce créneau</a>
+                </div>
+
+                <!-- Ligne 3 : 16 Avril -->
+                <div class="slot-card">
+                  <div class="slot-date">16 Avril</div>
+                  <div class="slot-time">10h</div>
+                  <a href="#" class="slot-btn">Réserver ce créneau</a>
+                </div>
+
+                <div class="slot-card">
+                  <div class="slot-date">16 Avril</div>
+                  <div class="slot-time">14h</div>
+                  <a href="#" class="slot-btn">Réserver ce créneau</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+        <div class="newsletter-container">
+          <h2 class="newsletter-title">Inscrivez-vous à notre Newsletter</h2>
+          <p class="newsletter-subtitle">Et ne ratez aucune de nos sorties</p>
+
+          <div class="newsletter-form-container">
+            <h3 class="form-title">Une inscription rapide !</h3>
+            <p class="form-subtitle">Comme nos vélos...</p>
+
+            <form class="newsletter-form" action="#" method="post">
+              <div class="form-group">
+                <label for="newsletter-email">Votre e-mail</label>
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  name="email"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="subscribe-btn">
+                S'inscrire gratuitement
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!--Prêt à transformer vos trajets ?-->
+
+      <section class="transform">
+        <div class="transform-container">
+          <h2>Prêt à transformer vos trajets ?</h2>
+          <div class="transform-buttons">
+            <a href="#" class="btn btn-primary">Réserver un essai</a>
+            <a href="#" class="btn btn-secondary">Découvrir les modèles</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img
+            src="./assets/logo_1_fond_blanc.png"
+            alt="Logo Velomobile"
+            width="120"
+            height="40"
+          />
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Accueil</a></li>
+              <li><a href="#">Qui sommes-nous</a></li>
+              <li><a href="#">Nos vélomobiles</a></li>
+              <li><a href="#">Nos services</a></li>
+              <li><a href="#">Technique</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Contactez-nous</a></li>
+              <li><a href="#">Réservez un essai</a></li>
+              <li><a href="#">Espace client</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <ul>
+              <li><a href="#">Mentions légales</a></li>
+              <li><a href="#">Politique de confidentialité</a></li>
+              <li><a href="#">Gestion de vos données personnelles</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Nos réseaux sociaux</h3>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 320 512"
+                  class="social-icon"
+                >
+                  <path
+                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="social-icon"
+                >
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter/X" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="social-icon"
+                >
+                  <path
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Youtube" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="social-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Velomobile - Tous droits réservés</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
